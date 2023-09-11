@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="./app.js" defer></script>
+  <title>Instagram Photo Feed</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary" style="padding: 10px 70px;">
+    <div class="container-fluid ">
+      <div class="navbar-brand">
+        <img src="/assets/instagram-svgrepo-com.svg" alt="" style="width: 30px;">
+        <h1>Instagram</h1>
+      </div>
+
+
+      <div class="d-flex gap-2" role="search">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Create a new post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Caption</h5>
+                <textarea name="" id="" cols="30" rows="10" style="width: 100%; height: 10vh;"></textarea>
+                <div class="d-flex pt-2">
+                  <div style="padding: .2rem; border: 1px solid black; border-radius: 10px;">
+                    <img src="/assets/camera-svgrepo-com.svg" alt="" style="width: 30px;">
+                  </div>
+                  <div style="padding: .2rem; border: 1px solid black; border-radius: 10px;">
+                    <img src="/assets/location-pin-alt-1-svgrepo-com.svg" alt="" style="width: 30px;">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="/assets/setting-1-svgrepo-com.svg" alt="" style="width: 30px;">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Profile and data</a></li>
+            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div style="display: flex; gap: 2rem; justify-content: center; padding: 40px 0;">
+    <img src="/assets/grid.svg" alt="" class="grid-icon">
+    <img src="/assets/square.svg" class="square-icon">
+  </div>
+
+  <section class="user-posts">
+
+  </section>
+
+</body>
+
+</html>

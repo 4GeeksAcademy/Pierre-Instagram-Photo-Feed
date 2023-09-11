@@ -1,0 +1,18 @@
+.navbar-brand {
+  display: flex;
+}
+
+.user-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+  gap: 5px;
+}
